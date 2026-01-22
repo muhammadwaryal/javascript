@@ -18,6 +18,13 @@ function USerInfo(username ,cb){
           },3000)
 
  }
+ function Anotherposts(id,cb){
+  setTimeout(()=>{
+    console.log("Fetching Another ");
+    cb({_id:id,username:"Muzammil",another:["Helll0 ji" ,"Kia karraha ho","Theek ho"]});
+  })
+
+ }
 USerInfo("Ahmed",function(data){
           console.log(data);
 GetAllPost(data._id,function(posts){
@@ -25,6 +32,10 @@ GetAllPost(data._id,function(posts){
 
 SavedPost(data._id,function(saved){
           console.log(saved);
+
+  Anotherposts(data._id,function(another){
+    console.log(another);
+  })        
 })
 })
 })

@@ -28,6 +28,7 @@ function USerInfo(username ,cb){
           cb({ _id:12212 ,username,age:15, email:"helloworld@gmail.com"},2000);
  })
 }
+
  function GetAllPost(id,cb){
           console.log("Fetching all Posts");
           setTimeout(()=>{
