@@ -12,3 +12,5 @@ setTimeout(()=>{
 
 pr.then(data =>console.log(data))
 pr.catch(error=> console.log(error));
+
+
